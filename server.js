@@ -39,7 +39,6 @@ http.createServer((req, res) => {
                 res.writeHead(302, {
                     [LOCATION]: NOT_FOUND_LOCATION
                 });
-                res.end();
             } else {
                 res.writeHead(500, {
                     [CONTENT_TYPE]: TEXT_PLAIN
