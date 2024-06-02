@@ -1,0 +1,127 @@
+body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #b8b6b4;
+}
+
+#div_principal {
+    box-sizing: border-box;
+    position: relative;
+    min-height: 100vh;
+    display: flex;
+}
+
+#cabecalho {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    background-image: linear-gradient(to bottom, #ff9900fc, #ff1e00);
+    color: #fff;
+    padding-left: 10px;
+    padding-right: 10px;
+    box-sizing: border-box;
+    z-index: 2;
+    height: auto;
+}
+
+#navegador ul {
+    list-style: none;
+    padding: 0;
+    display: inline-flex;
+}
+
+#navegador li {
+    margin-right: 20px;
+}
+
+#navegador a {
+    text-decoration: none;
+    color: #fff;
+}
+  
+#div_conteudo {
+    padding: 20px;
+    margin-top: 80px;
+    margin-bottom: 100px;
+    width: 100%;
+    box-sizing: content-box;
+    z-index: 1;
+}
+  
+#rodape {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background-image: linear-gradient(to bottom, #ff9900fc, #ff1e00);
+    color: #fff;
+    display: inline-flex;
+    padding: 10px;
+    box-sizing: border-box;
+    z-index: 2;
+    height: auto;
+}
+
+#rodape p {
+    margin-right: 20px;
+}
+
+#lista_produtos {
+    width: 100%;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#lista_produtos div {
+    width: 50%;
+}
+
+#tabela_download {
+    border-collapse: separate;
+    border-spacing: 5px;
+}
+
+#tabela_download tr, th, td {
+    border: 1px solid #2624249c;
+    padding: 10px;
+}
+
+#div_form {
+    display: inline-flex;
+}
+
+#div_form div {
+    display: inline-flex;
+    align-items: center;    
+    justify-content: space-between;
+}
+
+#div_form label {
+    width: 80px;
+    display: inline-block;
+}
+
+#div_form label, input, select {
+    padding: 5px;
+    margin: 5px;
+}
+
+.input_botao {
+    width: 50%;
+    padding: 7px;
+    background-color: #e9d2aefc;
+    border-radius: 3px;
+    cursor: pointer;
+    align-items: center;
+}
+  
+.input_botao:hover {
+    background-color: #bbab90fc;
+}
+
+#tabela_imagens {
+    border-collapse: separate;
+    border-spacing: 5px;
+}

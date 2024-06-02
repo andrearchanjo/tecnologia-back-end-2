@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="utf-8">
+        <title>Atividade 02</title>
+        <link rel="stylesheet" type="text/css" href="/css/web.css">
+    </head>
+    <body>
+        <div id="div_principal">
+            <header id="cabecalho">
+                <nav id="navegador">
+                    <ul>
+                        <li><a href="/pages/site.html" target="_self">Início</a></li>
+                        <li><a href="/pages/formulario.html" target="_self">Cadastro de Clientes</a></li>
+                        <li><a href="/pages/produtos.html" target="_self">Lista de Produtos</a></li>
+                        <li><a href="/pages/download.html" target="_self">Download</a></li>
+                        <li><a href="/pages/imagens.html" target="_self">Imagens</a></li>
+                    </ul>
+                </nav>
+            </header>
+
+            <div id="div_conteudo">
+
+                <h1 style="text-align:center;">Imagens</h1>
+
+                <div style="display: flex; justify-content: center;">
+                    <table id="tabela_imagens">
+                        <tr><td colspan=3 align="center"><img src="/img/capivara1.jpeg" name="foto" width="300" height="250"></td></tr>
+                        <tr>
+                            <td align="center"><img src="/img/capivara2.jpeg" onmouseover="mostraFoto2()" onmouseout="mostraFoto1()" width="100" height="100"></td>
+                            <td align="center"><img src="/img/capivara3.jpg" onmouseover="mostraFoto3()" onmouseout="mostraFoto1()" width="100" height="100"></td>
+                            <td align="center"><img src="/img/capivara4.jpeg" onmouseover="mostraFoto4()" onmouseout="mostraFoto1()" width="100" height="100"></td>
+                        </tr>
+                    </table>        
+                </div>
+            </div>
+
+            <footer id="rodape">
+                <p>Autor: André Archanjo Nunes Coelho</p>
+                <p>Contato: <a href="mailto:archanjoandre@yahoo.com.br">archanjoandre@yahoo.com.br</a></p>
+            </footer>
+        </div>
+
+        
+        <script>
+            function mostraFoto1() {
+                document.images['foto'].src = '/img/capivara1.jpeg';
+            }
+
+            function mostraFoto2() {
+                document.images['foto'].src = '/img/capivara2.jpeg';
+            }
+
+            function mostraFoto3() {
+                document.images['foto'].src = '/img/capivara3.jpg';
+            }
+
+            function mostraFoto4() {
+                document.images['foto'].src = '/img/capivara4.jpeg';
+            }
+        </script>
+
+    </body>
+</html>

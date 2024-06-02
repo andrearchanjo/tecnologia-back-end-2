@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <title>Atividade 02</title>
+        <link rel="stylesheet" type="text/css" href="/css/login.css">
+    </head>
+    <body>
+        <div id="div_login">
+            <h1 style="text-align: center; margin-bottom: 20px;">Login</h1>
+            <form name="login">
+                <div id="div_campos">
+                    <label for="usuario">Usuário:</label>
+                    <input type="text" id="usuario" name="usuario" class="input_campo"
+                        placeholder="XXX.XXX.XXX-XX"
+                        pattern="\d{3}\.?\d{3}\.?\d{3}-?\d{2}" 
+                        title="Digite o CPF no formato XXX.XXX.XXX-XX"
+                        required>
+                    <label for="senha">Senha:</label>
+                    <input type="password" id="senha" name="senha" class="input_campo" placeholder="Senha" required>
+                </div>
+                <div id="div_botoes">
+                    <input type=submit id="cadastrar" class="input_botao" value="Entrar"> 
+                </div>
+            </form>
+        </div>
+
+        <script>
+            document.addEventListener('DOMContentLoaded', function() {
+                document.querySelector('#cadastrar').addEventListener('click', function(event) {
+                    event.preventDefault();
+
+                    var usuario = document.querySelector('#usuario').value;
+                    var senha = document.querySelector('#senha').value;
+
+                    if (usuario === '11111111111' && senha === '123') {
+                        window.location = '/pages/site.html';
+                    } else {
+                        alert("Usuário Incorreto!");    
+                    }
+                });
+            });
+        </script>
+    </body>
+</html>
